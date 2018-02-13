@@ -24,3 +24,32 @@ last_name = gets.chomp
 full_name = first_name + mid_name + last_name
 puts 'Did you know there are ' + full_name.length.to_s + ' characters'
 puts 'in your name, ' + first_name + ' ' + mid_name + ' ' + last_name + '?'
+
+#upcase and downcase
+letters = 'aAbBcCdDeE'
+puts letters.upcase
+puts letters.downcase
+puts letters.swapcase
+puts letters.capitalize
+puts ' a'.capitalize
+puts letters
+
+#center and line_width
+
+line_width = 50
+puts(                'Old Mother Hubbard'.center(line_width))
+puts(                        'Sat in her cupboard'.center(line_width))
+puts(      'Eating her curds and whey,'.center(line_width))
+puts(                   'When along came a spider'.center(line_width))
+puts(                        'Who sat down beside her'.center(line_width))
+puts(     'And scared her poor shoe dog away.'.center(line_width))
+
+
+#ljust and rjust
+
+line_width = 40
+str = '--> text <--'
+puts(str.ljust( line_width))
+puts(str.center(line_width))
+puts(str.rjust( line_width))
+puts(str.ljust(line_width/2) + str.rjust(line_width/2))
